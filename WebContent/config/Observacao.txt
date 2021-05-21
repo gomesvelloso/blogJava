@@ -1,0 +1,3 @@
+1) Utilize o arquivo database.sql para criar seu banco de dados.
+2) Na classe Dao, insira seus dados de usuário e senha do mysql
+3) Caso não utulize mysql, será necessário mudar o DriverManager e adiconar as libs do seu banco de dados.
