@@ -12,7 +12,7 @@ abstract public class Dao {
 	ResultSet rs;
 	
 	private final String USER = "root";
-	private final String PASSWORD = "root";
+	private final String PASSWORD = "q1w2e3";
 	private final String URL = "jdbc:mysql://localhost:3306/blog";
 		
 	//Abre Conexão com com Banco de Dados
