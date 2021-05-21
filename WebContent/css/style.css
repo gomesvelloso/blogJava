@@ -1,0 +1,53 @@
+textarea{
+	resize: none;
+}
+#container {
+	margin: 0 auto; 
+	min-height: 580px; 
+	height: auto; 
+}
+#descricaoPagina{ 
+	text-align:center;
+}
+#divPostagem{
+	border: solid 2px gold;
+	border-radius: 25px;
+	margin: 20px;
+	padding: 5px;
+}
+#tituloPostagem{
+	text-align:center;
+}
+#conteudoPostagem{
+	text-align:justify;
+	margin-top: 10px;
+}
+#dataPostagem{
+	margin-top: 5px;
+	font-size: 85%;
+}
+#rodape{ 
+	position: absolute;
+	bottom: 0;
+	text-align:center;
+	font-weight: bold;
+	font-size: 85%;
+	width:100%
+}
+.link{
+	text-decoration:none;
+	outline:none;
+	color: #000;
+	
+}
+.tdButtons{
+	text-align:center;
+	width: 15%;
+}
+.tdData{
+	text-align:center;
+	width: 15%;
+}
+th {
+	text-align:center;
+}
