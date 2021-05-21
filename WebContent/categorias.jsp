@@ -9,7 +9,7 @@
 
 <div class="row" id="descricaoPagina">
 	<div class="col-md-12">
-		<h3>Categorias</h3>
+		<h3>Categorias </h3>
 		<hr/>	
 	</div>
 </div>
