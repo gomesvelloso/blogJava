@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 
 abstract public class Dao {
 	
-	
 	Connection conn;
 	PreparedStatement stmt;
 	ResultSet rs;
@@ -15,8 +14,8 @@ abstract public class Dao {
 	private final String USER = "root";
 	private final String PASSWORD = "q1w2e3";
 	private final String URL = "jdbc:mysql://localhost:3306/blog";
-	
-	
+		
+	//Abre Conexão com com Banco de Dados
 	protected void open() throws Exception {
 		
 		try {
@@ -25,17 +24,10 @@ abstract public class Dao {
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
-		
-		
-		
-		
 	}
 	
+	//Fecha Conexão com o Banco de Dados
 	protected void close() throws Exception{
 		conn.close();
 	}
-	
-	
-
 }

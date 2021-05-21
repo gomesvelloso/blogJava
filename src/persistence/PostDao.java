@@ -10,6 +10,7 @@ import utilities.FormataData;
 
 public class PostDao extends Dao{
 	
+	//Lista todas as postagens
 	public List<Post> findAll() throws Exception{
 		
 		open();
@@ -36,7 +37,9 @@ public class PostDao extends Dao{
 		return lista;
 		
 	}
-public List<Post> findByCategoria(int categoria) throws Exception{
+	
+	//Lista todas as postagens por categoria
+	public List<Post> findByCategoria(int categoria) throws Exception{
 		
 		open();
 		List<Post> lista = new ArrayList<Post>();
@@ -63,6 +66,8 @@ public List<Post> findByCategoria(int categoria) throws Exception{
 		return lista;
 		
 	}
+	
+	//Atualiza uma postagem
 	public void update(Post p) throws Exception {
 		
 		open();
@@ -75,7 +80,8 @@ public List<Post> findByCategoria(int categoria) throws Exception{
 		stmt.execute();
 		close();
 	}
-	
+
+	//Busca uma postagem pelo id
 	public Post findById(int id) throws Exception {
 		open();
 		Post p = new Post();
@@ -99,6 +105,8 @@ public List<Post> findByCategoria(int categoria) throws Exception{
 		return p;
 	}
 	
+
+	//Deleta uma postagem
 	public void delete(int id) throws Exception {
 		open();
 		stmt = conn.prepareStatement("DELETE FROM post WHERE postId = ?");
@@ -106,7 +114,8 @@ public List<Post> findByCategoria(int categoria) throws Exception{
 		stmt.execute();
 		close();
 	}
-	
+
+	//Cria uma postagem
 	public int save(Post p) throws Exception {
 		
 		open();

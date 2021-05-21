@@ -6,12 +6,12 @@ import java.util.List;
 import entities.Categoria;
 
 public class CategoriaDao extends Dao {
-	
+
+	//Lista todas as categorias
 	public List<Categoria> findAll() throws Exception {
 		
-		List<Categoria> lista = new ArrayList<Categoria>();
-		
 		open();
+		List<Categoria> lista = new ArrayList<Categoria>();
 		
 		stmt = conn.prepareStatement("SELECT * FROM categoria ORDER BY categoriaNome");
 		rs = stmt.executeQuery();
@@ -21,10 +21,7 @@ public class CategoriaDao extends Dao {
 			c.setCategoriaNome(rs.getString("categoriaNome"));
 			lista.add(c);
 		}
-		
 		close();
-		
 		return lista;
 	}
-
 }
